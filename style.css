@@ -1,17 +1,18 @@
 .container {
+    margin: auto;
     height: 200px;
     width: 200px;
     border: 2px solid;
 }
 
 .horizontal {
-    height: 100px;
+    height: 50%;
     display: flex;
-    border: 2px solid;
+    /* border: 2px solid; */
 }
 
 .square {
     height: 100px;
-    width: 100px;
-    border: 2px solid;
+    width: 100%;
+    border: 1px solid;
 }
