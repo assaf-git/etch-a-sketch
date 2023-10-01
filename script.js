@@ -4,3 +4,4 @@ const horizontal = document.createElement("div");
 horizontal.classList.add("horizontal");
 
 const square = document.createElement("div");
+square.classList.add("square");
