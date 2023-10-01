@@ -8,6 +8,7 @@ for (i = 0; i < 2; i++) {
     for (j = 0; j < 2; j++) {
         const square = document.createElement('div');
         square.classList.add('square');
+        square.setAttribute('id', j);
     }
     
 }
