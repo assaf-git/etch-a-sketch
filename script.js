@@ -9,6 +9,7 @@ for (i = 0; i < 2; i++) {
         const square = document.createElement('div');
         square.classList.add('square');
         square.setAttribute('id', j);
+        square.appendChild(horizontal);
     }
     
 }
