@@ -1,4 +1,4 @@
-const container = document.querySelector('#container');
+const container = document.querySelector('.container');
 
 for (i = 0; i < 2; i++) {
     const horizontal = document.createElement('div');
