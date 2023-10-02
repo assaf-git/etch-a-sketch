@@ -32,6 +32,6 @@ console.log(gridSquares);
 
 gridSquares.forEach(gridSquare => {
     gridSquare.addEventListener('mouseover', () => {
-
+        gridSquare.style.backgroundColor = 'black';
     });
 });
