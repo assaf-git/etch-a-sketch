@@ -1,14 +1,20 @@
+body {
+    height: 800px;
+}
+
 .container {
     margin: auto;
-    height: 200px;
-    width: 200px;
-    border: 2px solid;
+    padding-top: 150px;
+    height: 400px;
+    width: 400px;
 }
 
 .gridShell {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     height: 100%;
+    border: 2px solid;
 }
 
 .horizontal {
@@ -17,7 +23,6 @@
 }
 
 .square {
-    height: 100%;
     width: 100%;
     border: 1px solid;
 }
