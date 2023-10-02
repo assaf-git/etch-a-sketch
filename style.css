@@ -5,14 +5,19 @@
     border: 2px solid;
 }
 
+.gridShell {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .horizontal {
     height: 50%;
     display: flex;
-    /* border: 2px solid; */
 }
 
 .square {
-    height: 100px;
+    height: 100%;
     width: 100%;
     border: 1px solid;
 }
