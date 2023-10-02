@@ -29,3 +29,9 @@ for (i = 0; i < counter; i++) {
 }
 
 console.log(gridSquares);
+
+gridSquares.forEach(gridSquare => {
+    gridSquare.addEventListener('mouseover', () => {
+
+    });
+});
