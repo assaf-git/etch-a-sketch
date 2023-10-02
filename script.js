@@ -6,6 +6,12 @@ container.appendChild(gridShell);
 
 let counter = 16;
 
+let gridCounter = 0; //May be irrelevant
+
+const gridSquares = [];
+
+
+
 for (i = 0; i < counter; i++) {
     const horizontal = document.createElement('div');
     horizontal.classList.add('horizontal');
@@ -15,10 +21,11 @@ for (i = 0; i < counter; i++) {
     for (j = 0; j < counter; j++) {
         const squares = document.createElement('div');
         squares.classList.add('square');
-        const squareNum = [(i + 1) * (j + 1)];
-        squares.setAttribute('id', squareNum);
+        squares.setAttribute('id', j); //May be irrelevant
         horizontal.appendChild(squares);
-        console.log(squareNum);
+        gridSquares.push(squares);
+        gridCounter++; //May be irrelevant
     }
-    
 }
+
+console.log(gridSquares);
