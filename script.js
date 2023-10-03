@@ -4,7 +4,21 @@ const gridShell = document.createElement('div');
 gridShell.classList.add('gridShell');
 container.appendChild(gridShell);
 
-let counter = 16;
+const sliderContainer = document.createElement('div');
+const slider = document.createElement('input');
+const gridOutput = document.createElement('p');
+slider.setAttribute('type', 'range');
+slider.setAttribute('min', '4');
+slider.setAttribute('max', '64');
+slider.setAttribute('step', '1');
+slider.setAttribute('value', '16');
+sliderContainer.appendChild(slider);
+container.appendChild(sliderContainer);
+
+gridOutput.textContent = "Value: " + slider.value;
+
+
+let counter = 8;
 
 let gridCounter = 0; //May be irrelevant
 
