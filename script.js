@@ -122,6 +122,10 @@ function playGame() {
         eachGridSquare();
     });
 
+    reset.addEventListener('click', () => {
+        gridShell.replaceChildren();
+        gridAssembly();
+    });
     return colorSelection;
 }
 playGame();
