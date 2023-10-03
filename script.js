@@ -4,6 +4,10 @@ const gridShell = document.createElement('div');
 gridShell.classList.add('gridShell');
 container.appendChild(gridShell);
 
+const gridSquares = [];
+
+let counter = 0;
+
 const sliderContainer = document.createElement('div');
 const slider = document.createElement('input');
 const gridOutput = document.createElement('p');
@@ -21,14 +25,9 @@ slider.addEventListener('change', function(){
     gridOutput.textContent = "Value: " + slider.value;
     console.log(gridOutput);
     console.log(slider.value);
-    gridAssembly();
+    playGame();
 })
 
-let gridCounter = 0; //May be irrelevant
-
-const gridSquares = [];
-
-gridAssembly();
 
 gridOutput.textContent = "Value: " + slider.value;
 
@@ -47,18 +46,25 @@ function gridAssembly() {
             squares.setAttribute('id', j); //May be irrelevant
             horizontal.appendChild(squares);
             gridSquares.push(squares);
-            gridCounter++; //May be irrelevant
         }
     }
+    return counter++;
 }
 
-
-gridSquares.forEach(gridSquare => {
-    gridSquare.addEventListener('mouseover', () => {
-        gridSquare.style.backgroundColor = 'black';
-    });
-});
 
 function playGame() {
 
+    if (counter > 0) {
+        gridShell.replaceChildren();
+        gridAssembly();
+    } else {
+        gridAssembly();
+    }
+
+    gridSquares.forEach(gridSquare => {
+        gridSquare.addEventListener('mouseover', () => {
+            gridSquare.style.backgroundColor = 'black';
+        });
+    });
 }
+playGame();
