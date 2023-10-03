@@ -13,6 +13,7 @@ slider.setAttribute('max', '64');
 slider.setAttribute('step', '1');
 slider.setAttribute('value', '16');
 sliderContainer.appendChild(slider);
+sliderContainer.appendChild(gridOutput);
 container.appendChild(sliderContainer);
 
 gridOutput.textContent = "Value: " + slider.value;
