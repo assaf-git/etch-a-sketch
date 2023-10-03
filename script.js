@@ -1,5 +1,25 @@
 const container = document.querySelector('.container');
 
+const black = document.createElement('button');
+black.classList.add('black');
+container.appendChild(black);
+black.textContent = "Black";
+
+const rainbow = document.createElement('button');
+rainbow.classList.add('rainbow');
+container.appendChild(rainbow);
+rainbow.textContent = "Rainbow";
+
+const color = document.createElement('button');
+color.classList.add('color');
+container.appendChild(color);
+color.textContent = "Colour";
+
+const reset = document.createElement('button');
+reset.classList.add('reset');
+container.appendChild(reset);
+reset.textContent = "Reset";
+
 const gridShell = document.createElement('div');
 gridShell.classList.add('gridShell');
 container.appendChild(gridShell);
