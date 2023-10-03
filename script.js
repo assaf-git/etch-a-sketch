@@ -21,18 +21,14 @@ sliderContainer.appendChild(gridOutput);
 container.appendChild(sliderContainer);
 
 
-slider.addEventListener('change', function(){
-    gridOutput.textContent = "Value: " + slider.value;
-    console.log(gridOutput);
-    console.log(slider.value);
+slider.addEventListener('change', () => {
     playGame();
 })
 
 
-gridOutput.textContent = "Value: " + slider.value;
-
-
 function gridAssembly() {
+
+    gridOutput.textContent = `Grid: ${slider.value} x ${slider.value}`;
 
     for (i = 0; i < slider.value; i++) {
         const horizontal = document.createElement('div');
@@ -63,7 +59,7 @@ function playGame() {
 
     gridSquares.forEach(gridSquare => {
         gridSquare.addEventListener('mouseover', () => {
-            gridSquare.style.backgroundColor = 'black';
+        gridSquare.style.backgroundColor = 'black';
         });
     });
 }
