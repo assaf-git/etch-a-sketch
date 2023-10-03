@@ -28,6 +28,10 @@ const gridSquares = [];
 
 let counter = 0;
 
+let colorSelection = 'black';
+
+let randomSelection;
+
 const sliderContainer = document.createElement('div');
 const slider = document.createElement('input');
 const gridOutput = document.createElement('p');
@@ -68,12 +72,24 @@ function gridAssembly() {
 }
 
 
-function eachGridSquare() {
-    gridSquares.forEach(gridSquare => {
-        gridSquare.addEventListener('mouseover', () => {
-        gridSquare.style.backgroundColor = 'black';
+  function eachGridSquare() {   
+    
+    if (colorSelection === 'black') {
+        gridSquares.forEach(gridSquare => {
+            gridSquare.addEventListener('mouseover', () => {
+            gridSquare.style.backgroundColor = colorSelection;
+            });
         });
-    });
+    }
+
+    else if (colorSelection === randomSelection) {
+        gridSquares.forEach(gridSquare => {
+            const randomColor = Math.floor(Math.random()*16777215).toString(16);
+            gridSquare.addEventListener('mouseover', () => {
+            gridSquare.style.backgroundColor = "#" + randomColor;
+            });
+        });
+    }
 }
 
 
@@ -89,8 +105,15 @@ function playGame() {
     eachGridSquare();
 
     black.addEventListener('click', () => {
+        colorSelection = 'black';
         eachGridSquare();
     });
 
+    rainbow.addEventListener('click', () => {
+        colorSelection = randomSelection;
+        eachGridSquare();
+    });
+
+    return colorSelection;
 }
 playGame();
