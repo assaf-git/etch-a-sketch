@@ -16,9 +16,9 @@ sliderContainer.appendChild(slider);
 container.appendChild(sliderContainer);
 
 gridOutput.textContent = "Value: " + slider.value;
+console.log(gridOutput);
 
-
-let counter = 8;
+// let counter = 8;
 
 let gridCounter = 0; //May be irrelevant
 
@@ -26,13 +26,13 @@ const gridSquares = [];
 
 
 
-for (i = 0; i < counter; i++) {
+for (i = 0; i < slider.value; i++) {
     const horizontal = document.createElement('div');
     horizontal.classList.add('horizontal');
     horizontal.setAttribute('id', i); //May be irrelevant
     gridShell.appendChild(horizontal);
 
-    for (j = 0; j < counter; j++) {
+    for (j = 0; j < slider.value; j++) {
         const squares = document.createElement('div');
         squares.classList.add('square');
         squares.setAttribute('id', j); //May be irrelevant
