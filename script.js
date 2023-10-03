@@ -68,6 +68,15 @@ function gridAssembly() {
 }
 
 
+function eachGridSquare() {
+    gridSquares.forEach(gridSquare => {
+        gridSquare.addEventListener('mouseover', () => {
+        gridSquare.style.backgroundColor = 'black';
+        });
+    });
+}
+
+
 function playGame() {
 
     if (counter > 0) {
@@ -77,10 +86,7 @@ function playGame() {
         gridAssembly();
     }
 
-    gridSquares.forEach(gridSquare => {
-        gridSquare.addEventListener('mouseover', () => {
-        gridSquare.style.backgroundColor = 'black';
-        });
-    });
+    eachGridSquare();
+
 }
 playGame();
