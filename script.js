@@ -88,5 +88,9 @@ function playGame() {
 
     eachGridSquare();
 
+    black.addEventListener('click', () => {
+        eachGridSquare();
+    });
+
 }
 playGame();
