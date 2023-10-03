@@ -12,7 +12,10 @@ rainbow.textContent = "Rainbow";
 
 const color = document.createElement('button');
 color.classList.add('color');
+const colorPicker = document.createElement('input');
+colorPicker.setAttribute('type', 'color');
 container.appendChild(color);
+container.appendChild(colorPicker);
 color.textContent = "Colour";
 
 const reset = document.createElement('button');
@@ -111,6 +114,11 @@ function playGame() {
 
     rainbow.addEventListener('click', () => {
         colorSelection = randomSelection;
+        eachGridSquare();
+    });
+
+    color.addEventListener('click', () => {
+        colorSelection = colorPicker.value;
         eachGridSquare();
     });
 
