@@ -17,7 +17,10 @@ sliderContainer.appendChild(gridOutput);
 container.appendChild(sliderContainer);
 
 gridOutput.textContent = "Value: " + slider.value;
-console.log(gridOutput);
+
+slider.oninput = function () {
+    gridOutput.textContent = slider.value;
+}
 
 // let counter = 8;
 
@@ -43,7 +46,7 @@ for (i = 0; i < slider.value; i++) {
     }
 }
 
-console.log(gridSquares);
+// console.log(gridSquares);
 
 gridSquares.forEach(gridSquare => {
     gridSquare.addEventListener('mouseover', () => {
