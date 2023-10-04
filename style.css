@@ -4,14 +4,17 @@ body {
 
 .container {
     margin: auto;
-    padding-top: 150px;
-    height: 400px;
-    width: 400px;
+    height: 550px;
+    width: 550px;
+}
+
+h1 {
+    text-align: center;
 }
 
 .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding-bottom: 10px;
 }
 
