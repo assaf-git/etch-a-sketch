@@ -29,6 +29,24 @@ h1 {
     width: 68px;
 }
 
+.black,
+.rainbow,
+.color,
+.shading,
+.reset {
+    background-color: #cbdae1;
+    border-radius: 8px;
+}
+
+.color-picker {
+    background-color: #ecd1c5;
+    border-radius: 8px;
+}
+
+input[type="color"] {
+    border-radius: 4px;
+}
+
 .grid-shell {
     height: 100%;
     border: 2px solid;
