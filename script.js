@@ -7,9 +7,9 @@ const rainbow = document.querySelector('.rainbow');
 const color = document.querySelector('.color');
 const colorPicker = document.querySelector('.color-picker');
 
-const reset = document.querySelector('.reset');
-
 const shading = document.querySelector('.shading');
+
+const reset = document.querySelector('.reset');
 
 const gridShell = document.querySelector('.grid-shell');
 
@@ -114,15 +114,15 @@ function playGame() {
         eachGridSquare();
     });
 
-    reset.addEventListener('click', () => {
-        gridShell.replaceChildren();
-        gridAssembly();
-    });
-
     shading.addEventListener('click', () => {
         colorSelection = shading;
         eachGridSquare();
     })
+
+    reset.addEventListener('click', () => {
+        gridShell.replaceChildren();
+        gridAssembly();
+    });
 
     return colorSelection;
 }
