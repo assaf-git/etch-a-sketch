@@ -13,6 +13,10 @@ const colorPicker = document.querySelector('.color-picker');
 
 const reset = document.querySelector('.reset');
 
+const shading = document.querySelector('.shading');
+
+const lighting = document.querySelector('.lighting');
+
 const gridShell = document.querySelector('.grid-shell');
 
 
