@@ -1,31 +1,20 @@
 const container = document.querySelector('.container');
 
-const black = document.createElement('button');
-black.classList.add('black');
-container.appendChild(black);
-black.textContent = "Black";
+const black = document.querySelector('.black');
 
-const rainbow = document.createElement('button');
-rainbow.classList.add('rainbow');
-container.appendChild(rainbow);
-rainbow.textContent = "Rainbow";
+const rainbow = document.querySelector('.rainbow');
 
-const color = document.createElement('button');
-color.classList.add('color');
-const colorPicker = document.createElement('input');
-colorPicker.setAttribute('type', 'color');
-container.appendChild(color);
-container.appendChild(colorPicker);
-color.textContent = "Colour";
+const color = document.querySelector('.color');
+const colorPicker = document.querySelector('.color-picker');
+// colorPicker.setAttribute('type', 'color');
+// container.appendChild(color);
+// container.appendChild(colorPicker);
+// color.textContent = "Colour";
 
-const reset = document.createElement('button');
-reset.classList.add('reset');
-container.appendChild(reset);
-reset.textContent = "Reset";
+const reset = document.querySelector('.reset');
 
-const gridShell = document.createElement('div');
-gridShell.classList.add('gridShell');
-container.appendChild(gridShell);
+const gridShell = document.querySelector('.grid-shell');
+
 
 const gridSquares = [];
 
@@ -35,17 +24,12 @@ let colorSelection = 'black';
 
 let randomSelection;
 
-const sliderContainer = document.createElement('div');
-const slider = document.createElement('input');
-const gridOutput = document.createElement('p');
-slider.setAttribute('type', 'range');
-slider.setAttribute('min', '4');
-slider.setAttribute('max', '64');
-slider.setAttribute('step', '1');
-slider.setAttribute('value', '16');
-sliderContainer.appendChild(slider);
-sliderContainer.appendChild(gridOutput);
-container.appendChild(sliderContainer);
+const sliderContainer = document.querySelector('.slide-container');
+const slider = document.querySelector('.slider');
+const gridOutput = document.querySelector('.grid-output');
+// sliderContainer.appendChild(slider);
+// sliderContainer.appendChild(gridOutput);
+// container.appendChild(sliderContainer);
 
 
 slider.addEventListener('change', () => {
