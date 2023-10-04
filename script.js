@@ -21,6 +21,7 @@ const gridSquares = [];
 let counter = 0;
 
 let colorSelection = 'black';
+console.log(colorSelection);
 
 let randomSelection;
 
@@ -61,10 +62,11 @@ function gridAssembly() {
 
   function eachGridSquare() {   
     
-    if (colorSelection === 'black') {
+    if (colorSelection === 'black' || colorSelection == colorPicker.value) {
         gridSquares.forEach(gridSquare => {
             gridSquare.addEventListener('mouseover', () => {
             gridSquare.style.backgroundColor = colorSelection;
+            console.log(colorSelection);
             });
         });
     }
@@ -104,6 +106,7 @@ function playGame() {
     color.addEventListener('click', () => {
         colorSelection = colorPicker.value;
         eachGridSquare();
+        console.log(colorPicker.value);
     });
 
     reset.addEventListener('click', () => {
