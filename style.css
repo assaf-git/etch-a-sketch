@@ -9,7 +9,13 @@ body {
     width: 400px;
 }
 
-.gridShell {
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.grid-shell {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -25,4 +31,14 @@ body {
 .square {
     width: 100%;
     border: 1px solid;
+}
+
+.slide-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider {
+    padding: 10px 135px;
 }
