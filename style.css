@@ -19,11 +19,11 @@ h1 {
 }
 
 .grid-shell {
+    height: 100%;
+    border: 2px solid;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    height: 100%;
-    border: 2px solid;
 }
 
 .horizontal {
@@ -37,11 +37,19 @@ h1 {
 }
 
 .slide-container {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.slider {
-    padding: 10px 135px;
-}
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    height: 15px;
+    background: #ccc;
+    border-radius: 16px;
+  }
