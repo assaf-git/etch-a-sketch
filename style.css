@@ -14,6 +14,7 @@ h1 {
     margin: 20px;
     text-align: center;
     font-size: 50px;
+    color: #2c2c2c;
 }
 
 .buttons {
@@ -53,6 +54,8 @@ input[type="color"] {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
+    border-radius: 8px;
+    color: #404040;
 }
 
 .horizontal {
@@ -63,6 +66,8 @@ input[type="color"] {
 .square {
     width: 100%;
     border: 1px solid;
+    border-radius: 2px;
+    color: #404040;
 }
 
 .slide-container {
@@ -86,22 +91,21 @@ input[type="range"] {
 input[type="range" i]::-webkit-slider-runnable-track {
     background-color: #ecd1c5;
     border-radius: 16px;
-    border: 1px solid;
+    border: 1px solid #404040;
 }
 
 input[type="range"]::-webkit-slider-thumb {
-    /* removing default appearance */
     -webkit-appearance: none;
     appearance: none;
-    /* creating a custom design */
     height: 15px;
     width: 15px;
     background-color: #aebcc4;
     border-radius: 50%;
-    border: 1px solid;
+    border: 1px solid #404040;
   }
 
 p {
     margin: 15px;
     font-size: 20px;
+    color: #292929;
 }
