@@ -14,8 +14,15 @@ h1 {
 
 .buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-bottom: 10px;
+}
+
+.black,
+.rainbow,
+.shading,
+.reset {
+    width: 68px;
 }
 
 .grid-shell {
