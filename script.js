@@ -11,8 +11,6 @@ const reset = document.querySelector('.reset');
 
 const shading = document.querySelector('.shading');
 
-const lighting = document.querySelector('.lighting');
-
 const gridShell = document.querySelector('.grid-shell');
 
 const sliderContainer = document.querySelector('.slide-container');
@@ -55,8 +53,8 @@ function gridAssembly() {
 }
 
 
-  function eachGridSquare() {   
-    
+function eachGridSquare() {   
+
     if (colorSelection === 'black' || colorSelection == colorPicker.value) {
         gridSquares.forEach(gridSquare => {
             gridSquare.addEventListener('mouseover', () => {
@@ -85,7 +83,7 @@ function gridAssembly() {
                     gridSquare.dataset.brightness = currentBrightness;
                 }
             });
-        });
+        });        
     }
 }
 
